@@ -6,13 +6,12 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "methodcache"
     gem.summary = %Q{like memoizable etc but more production oriented}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{like memoizable etc but more production oriented}
     gem.email = "joe@citizenlogistics.com"
     gem.homepage = "http://github.com/citizenlogistics/methodcache"
-    gem.authors = ["Citizen Logistics, Inc."]
-    gem.add_development_dependency "minitest", ">= 0"
-    gem.add_development_dependency "yard", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.authors = ["Joe Edelman"]
+    gem.add_development_dependency "minitest"
+    gem.add_development_dependency "yard"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
