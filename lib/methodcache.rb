@@ -16,7 +16,7 @@ class MethodCache
   def timebox title, max_t = 0.01
     result = nil
     t = Benchmark.realtime{ result = yield }
-    warn "#{title}: #{(time*1000).to_i}ms" unless t < max_t
+    warn "#{title}: #{(t*1000).to_i}ms" unless t < max_t
     result
   end
 
